@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हिन्दी गद्य साहित्य: शुक्ल और शुक्लोत्तर युग - एडवांस टेस्ट सीरीज़</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 2.2em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+        }
+        .question-block p {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .options label:hover {
+            background-color: #dbe4e6;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 200px;
+            padding: 12px 20px;
+            margin: 30px auto;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+        .results {
+            margin-top: 40px;
+            padding: 20px;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            background-color: #e8f4fa;
+            text-align: center;
+            display: none; /* Hidden by default */
+        }
+        .results p {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .result-item {
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .correct {
+            background-color: #d4edda; /* Light green */
+            border: 1px solid #28a745;
+        }
+        .incorrect {
+            background-color: #f8d7da; /* Light red */
+            border: 1px solid #dc3545;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+            margin-top: 5px;
+            display: block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>हिन्दी गद्य साहित्य: शुक्ल और शुक्लोत्तर युग</h1>
+        <h2>एडवांस टेस्ट सीरीज़</h2>
+
+        <form id="quizForm">
+            <h2>शुक्ल युग (1918-1936 ई.)</h2>
+
+            <div class="question-block" data-correct="ग">
+                <p>1. 'चिंतामणि' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="क"> (क) नाटक</label>
+                    <label><input type="radio" name="q1" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q1" value="ग"> (ग) निबंध</label>
+                    <label><input type="radio" name="q1" value="घ"> (घ) उपन्यास</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>2. 'चिंतामणि' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="क"> (क) प्रेमचंद</label>
+                    <label><input type="radio" name="q2" value="ख"> (ख) आचार्य रामचंद्र शुक्ल</label>
+                    <label><input type="radio" name="q2" value="ग"> (ग) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q2" value="घ"> (घ) हज़ारीप्रसाद द्विवेदी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>3. प्रेमचंद का मूल नाम क्या था?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="क"> (क) धनपतराय</label>
+                    <label><input type="radio" name="q3" value="ख"> (ख) नवाबराय</label>
+                    <label><input type="radio" name="q3" value="ग"> (ग) धनपतराय श्रीवास्तव</label>
+                    <label><input type="radio" name="q3" value="घ"> (घ) इनमें से कोई नहीं</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>4. 'गोदान' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="क"> (क) नाटक</label>
+                    <label><input type="radio" name="q4" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q4" value="ग"> (ग) निबंध</label>
+                    <label><input type="radio" name="q4" value="घ"> (घ) उपन्यास</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>5. 'कंकाल' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="क"> (क) प्रेमचंद</label>
+                    <label><input type="radio" name="q5" value="ख"> (ख) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q5" value="ग"> (ग) रामचंद्र शुक्ल</label>
+                    <label><input type="radio" name="q5" value="घ"> (घ) इलाचंद्र जोशी</label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="ग">
+                <p>6. 'ध्रुवस्वामिनी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q6" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q6" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q6" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>7. 'आँसू' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q7" value="ख"> (ख) कविता संग्रह</label>
+                    <label><input type="radio" name="q7" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q7" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="क">
+                <p>8. 'स्कंदगुप्त' के नाटककार कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="क"> (क) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q8" value="ख"> (ख) हरिकृष्ण प्रेमी</label>
+                    <label><input type="radio" name="q8" value="ग"> (ग) लक्ष्मीनारायण मिश्र</label>
+                    <label><input type="radio" name="q8" value="घ"> (घ) मोहन राकेश</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>9. 'एक घूँट' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q9" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q9" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q9" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="क">
+                <p>10. 'निर्मला' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="क"> (क) प्रेमचंद</label>
+                    <label><input type="radio" name="q10" value="ख"> (ख) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q10" value="ग"> (ग) भगवतीचरण वर्मा</label>
+                    <label><input type="radio" name="q10" value="घ"> (घ) वृंदावनलाल वर्मा</label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="क">
+                <p>11. 'पंच परमेश्वर' कहानी के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="क"> (क) प्रेमचंद</label>
+                    <label><input type="radio" name="q11" value="ख"> (ख) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q11" value="ग"> (ग) राजेंद्र यादव</label>
+                    <label><input type="radio" name="q11" value="घ"> (घ) भीष्म साहनी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>12. आचार्य रामचंद्र शुक्ल को किस रूप में जाना जाता है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="क"> (क) उपन्यासकार</label>
+                    <label><input type="radio" name="q12" value="ख"> (ख) कवि</label>
+                    <label><input type="radio" name="q12" value="ग"> (ग) निबंधकार और आलोचक</label>
+                    <label><input type="radio" name="q12" value="घ"> (घ) नाटककार</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>13. 'कर्मभूमि' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q13" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q13" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q13" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>14. 'आकाशदीप' और 'पुरस्कार' किस लेखक की प्रसिद्ध कहानियाँ हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="क"> (क) प्रेमचंद</label>
+                    <label><input type="radio" name="q14" value="ख"> (ख) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q14" value="ग"> (ग) यशपाल</label>
+                    <label><input type="radio" name="q14" value="घ"> (घ) जैनेन्द्र कुमार</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>15. 'पथ के साथी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="क"> (क) उपन्यास</label>
+                    <label><input type="radio" name="q15" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q15" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q15" value="घ"> (घ) संस्मरण</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>16. 'महादेवी वर्मा' किस युग की प्रमुख लेखिका हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="क"> (क) छायावादोत्तर युग</label>
+                    <label><input type="radio" name="q16" value="ख"> (ख) शुक्ल युग (छायावाद के अंतर्गत)</label>
+                    <label><input type="radio" name="q16" value="ग"> (ग) द्विवेदी युग</label>
+                    <label><input type="radio" name="q16" value="घ"> (घ) भारतेन्दु युग</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>17. 'अजातशत्रु' नाटक के रचयिता कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="क"> (क) हरिकृष्ण प्रेमी</label>
+                    <label><input type="radio" name="q17" value="ख"> (ख) लक्ष्मीनारायण मिश्र</label>
+                    <label><input type="radio" name="q17" value="ग"> (ग) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q17" value="घ"> (घ) उपेंद्रनाथ 'अश्क'</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>18. 'परीक्षा गुरु' उपन्यास किस युग की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="क"> (क) द्विवेदी युग</label>
+                    <label><input type="radio" name="q18" value="ख"> (ख) भारतेन्दु युग</label>
+                    <label><input type="radio" name="q18" value="ग"> (ग) शुक्ल युग</label>
+                    <label><input type="radio" name="q18" value="घ"> (घ) छायावादोत्तर युग</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>19. 'गबन' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="क"> (क) भगवतीचरण वर्मा</label>
+                    <label><input type="radio" name="q19" value="ख"> (ख) प्रेमचंद</label>
+                    <label><input type="radio" name="q19" value="ग"> (ग) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q19" value="घ"> (घ) वृंदावनलाल वर्मा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="क">
+                <p>20. 'मैला आँचल' किस युग की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="क"> (क) शुक्लोत्तर युग (स्वतंत्रता के बाद)</label>
+                    <label><input type="radio" name="q20" value="ख"> (ख) शुक्ल युग</label>
+                    <label><input type="radio" name="q20" value="ग"> (ग) द्विवेदी युग</label>
+                    <label><input type="radio" name="q20" value="घ"> (घ) भारतेन्दु युग</label>
+                </div>
+            </div>
+
+            <h2>शुक्लोत्तर युग (1936 ई. के बाद)</h2>
+
+            <div class="question-block" data-correct="घ">
+                <p>21. 'बाणभट्ट की आत्मकथा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q21" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q21" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q21" value="ग"> (ग) निबंध</label>
+                    <label><input type="radio" name="q21" value="घ"> (घ) उपन्यास</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>22. 'बाणभट्ट की आत्मकथा' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q22" value="क"> (क) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q22" value="ख"> (ख) प्रेमचंद</label>
+                    <label><input type="radio" name="q22" value="ग"> (ग) हज़ारीप्रसाद द्विवेदी</label>
+                    <label><input type="radio" name="q22" value="घ"> (घ) अज्ञेय</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>23. 'शेखर एक जीवनी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q23" value="क"> (क) नाटक</label>
+                    <label><input type="radio" name="q23" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q23" value="ग"> (ग) निबंध</label>
+                    <label><input type="radio" name="q23" value="घ"> (घ) उपन्यास</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>24. 'शेखर एक जीवनी' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q24" value="क"> (क) जैनेन्द्र कुमार</label>
+                    <label><input type="radio" name="q24" value="ख"> (ख) इलाचंद्र जोशी</label>
+                    <label><input type="radio" name="q24" value="ग"> (ग) भगवतीचरण वर्मा</label>
+                    <label><input type="radio" name="q24" value="घ"> (घ) सच्चिदानंद हीरानंद वात्स्यायन 'अज्ञेय'</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="क">
+                <p>25. 'त्यागपत्र' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q25" value="क"> (क) जैनेन्द्र कुमार</label>
+                    <label><input type="radio" name="q25" value="ख"> (ख) अज्ञेय</label>
+                    <label><input type="radio" name="q25" value="ग"> (ग) मोहन राकेश</label>
+                    <label><input type="radio" name="q25" value="घ"> (घ) यशपाल</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>26. 'गुनाहों का देवता' उपन्यास के रचयिता कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q26" value="क"> (क) मोहन राकेश</label>
+                    <label><input type="radio" name="q26" value="ख"> (ख) राजेंद्र यादव</label>
+                    <label><input type="radio" name="q26" value="ग"> (ग) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q26" value="घ"> (घ) कमलेश्वर</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>27. 'नीड़ का निर्माण फिर' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q27" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q27" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q27" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q27" value="घ"> (घ) आत्मकथा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>28. 'नीड़ का निर्माण फिर' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q28" value="क"> (क) राजेंद्र यादव</label>
+                    <label><input type="radio" name="q28" value="ख"> (ख) मोहन राकेश</label>
+                    <label><input type="radio" name="q28" value="ग"> (ग) हरिवंश राय बच्चन</label>
+                    <label><input type="radio" name="q28" value="घ"> (घ) धर्मवीर भारती</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>29. 'आषाढ़ का एक दिन' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q29" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q29" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q29" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q29" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>30. 'आषाढ़ का एक दिन' के नाटककार कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q30" value="क"> (क) लक्ष्मीनारायण मिश्र</label>
+                    <label><input type="radio" name="q30" value="ख"> (ख) उपेंद्रनाथ 'अश्क'</label>
+                    <label><input type="radio" name="q30" value="ग"> (ग) मोहन राकेश</label>
+                    <label><input type="radio" name="q30" value="घ"> (घ) धर्मवीर भारती</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>31. 'संस्कृति के चार अध्याय' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q31" value="क"> (क) उपन्यास</label>
+                    <label><input type="radio" name="q31" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q31" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q31" value="घ"> (घ) संस्कृति संबंधी ग्रंथ/निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>32. 'संस्कृति के चार अध्याय' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q32" value="क"> (क) हज़ारीप्रसाद द्विवेदी</label>
+                    <label><input type="radio" name="q32" value="ख"> (ख) रामधारी सिंह 'दिनकर'</label>
+                    <label><input type="radio" name="q32" value="ग"> (ग) अज्ञेय</label>
+                    <label><input type="radio" name="q32" value="घ"> (घ) विद्यानिवास मिश्र</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>33. 'पर्दा' कहानी के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q33" value="क"> (क) प्रेमचंद</label>
+                    <label><input type="radio" name="q33" value="ख"> (ख) मोहन राकेश</label>
+                    <label><input type="radio" name="q33" value="ग"> (ग) यशपाल</label>
+                    <label><input type="radio" name="q33" value="घ"> (घ) राजेंद्र यादव</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>34. 'दिव्या' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q34" value="क"> (क) जैनेन्द्र कुमार</label>
+                    <label><input type="radio" name="q34" value="ख"> (ख) अज्ञेय</label>
+                    <label><input type="radio" name="q34" value="ग"> (ग) यशपाल</label>
+                    <label><input type="radio" name="q34" value="घ"> (घ) भगवतीचरण वर्मा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>35. 'अंधा युग' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q35" value="क"> (क) नाटक</label>
+                    <label><input type="radio" name="q35" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q35" value="ग"> (ग) कहानी</label>
+                    <label><input type="radio" name="q35" value="घ"> (घ) काव्य नाटक</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>36. 'अंधा युग' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q36" value="क"> (क) मोहन राकेश</label>
+                    <label><input type="radio" name="q36" value="ख"> (ख) लक्ष्मीनारायण लाल</label>
+                    <label><input type="radio" name="q36" value="ग"> (ग) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q36" value="घ"> (घ) सर्वेश्वरदयाल सक्सेना</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>37. 'सारा आकाश' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q37" value="क"> (क) मोहन राकेश</label>
+                    <label><input type="radio" name="q37" value="ख"> (ख) कमलेश्वर</label>
+                    <label><input type="radio" name="q37" value="ग"> (ग) राजेंद्र यादव</label>
+                    <label><input type="radio" name="q37" value="घ"> (घ) निर्मल वर्मा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>38. 'वैशाली की नगरवधू' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q38" value="क"> (क) हज़ारीप्रसाद द्विवेदी</label>
+                    <label><input type="radio" name="q38" value="ख"> (ख) चतुरसेन शास्त्री</label>
+                    <label><input type="radio" name="q38" value="ग"> (ग) भगवतीचरण वर्मा</label>
+                    <label><input type="radio" name="q38" value="घ"> (घ) वृंदावनलाल वर्मा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>39. 'महाभोज' उपन्यास की लेखिका कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q39" value="क"> (क) उषा प्रियंवदा</label>
+                    <label><input type="radio" name="q39" value="ख"> (ख) कृष्णा सोबती</label>
+                    <label><input type="radio" name="q39" value="ग"> (ग) मन्नू भंडारी</label>
+                    <label><input type="radio" name="q39" value="घ"> (घ) मृदुला गर्ग</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>40. 'कितनी नावों में कितनी बार' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q40" value="क"> (क) उपन्यास</label>
+                    <label><input type="radio" name="q40" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q40" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q40" value="घ"> (घ) काव्य संग्रह</label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="ग">
+                <p>41. 'मैला आँचल' उपन्यास किस अंचल का चित्रण करता है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q41" value="क"> (क) राजस्थान</label>
+                    <label><input type="radio" name="q41" value="ख"> (ख) गुजरात</label>
+                    <label><input type="radio" name="q41" value="ग"> (ग) बिहार (पूर्णिया)</label>
+                    <label><input type="radio" name="q41" value="घ"> (घ) उत्तर प्रदेश</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>42. 'मैला आँचल' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q42" value="क"> (क) राजेंद्र यादव</label>
+                    <label><input type="radio" name="q42" value="ख"> (ख) मोहन राकेश</label>
+                    <label><input type="radio" name="q42" value="ग"> (ग) फणीश्वरनाथ 'रेणु'</label>
+                    <label><input type="radio" name="q42" value="घ"> (घ) निर्मल वर्मा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>43. 'शेखर: एक जीवनी' किस प्रकार का उपन्यास है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q43" value="क"> (क) ऐतिहासिक</label>
+                    <label><input type="radio" name="q43" value="ख"> (ख) सामाजिक</label>
+                    <label><input type="radio" name="q43" value="ग"> (ग) मनोवैज्ञानिक</label>
+                    <label><input type="radio" name="q43" value="घ"> (घ) आंचलिक</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>44. 'आँगन के पार द्वार' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q44" value="क"> (क) मोहन राकेश</label>
+                    <label><input type="radio" name="q44" value="ख"> (ख) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q44" value="ग"> (ग) अज्ञेय</label>
+                    <label><input type="radio" name="q44" value="घ"> (घ) हज़ारीप्रसाद द्विवेदी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>45. 'ठूँठा आम' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q45" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q45" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q45" value="ग"> (ग) निबंध</label>
+                    <label><input type="radio" name="q45" value="घ"> (घ) नाटक</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>46. 'पाजेब' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q46" value="क"> (क) उपन्यास</label>
+                    <label><input type="radio" name="q46" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q46" value="ग"> (ग) कहानी</label>
+                    <label><input type="radio" name="q46" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>47. 'गेहूँ बनाम गुलाब' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q47" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q47" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q47" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q47" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>48. 'कुटज' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q48" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q48" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q48" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q48" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>49. 'मेरी तिब्बत यात्रा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q49" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q49" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q49" value="ग"> (ग) यात्रा वृत्तांत</label>
+                    <label><input type="radio" name="q49" value="घ"> (घ) संस्मरण</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>50. 'पथ के साथी' किस लेखिका का संस्मरण है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q50" value="क"> (क) सुभद्रा कुमारी चौहान</label>
+                    <label><input type="radio" name="q50" value="ख"> (ख) मन्नू भंडारी</label>
+                    <label><input type="radio" name="q50" value="ग"> (ग) महादेवी वर्मा</label>
+                    <label><input type="radio" name="q50" value="घ"> (घ) कृष्णा सोबती</label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="ग">
+                <p>51. 'लहरों के राजहंस' के नाटककार कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q51" value="क"> (क) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q51" value="ख"> (ख) लक्ष्मीनारायण लाल</label>
+                    <label><input type="radio" name="q51" value="ग"> (ग) मोहन राकेश</label>
+                    <label><input type="radio" name="q51" value="घ"> (घ) उपेंद्रनाथ 'अश्क'</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>52. 'रेती के फूल' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q52" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q52" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q52" value="ग"> (ग) निबंध</label>
+                    <label><input type="radio" name="q52" value="घ"> (घ) नाटक</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>53. 'क्या भूलूँ क्या याद करूँ' किसकी आत्मकथा का अंश है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q53" value="क"> (क) अज्ञेय</label>
+                    <label><input type="radio" name="q53" value="ख"> (ख) राजेंद्र यादव</label>
+                    <label><input type="radio" name="q53" value="ग"> (ग) हरिवंश राय बच्चन</label>
+                    <label><input type="radio" name="q53" value="घ"> (घ) मोहन राकेश</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>54. 'चंद्रकांता संतति' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q54" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q54" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q54" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q54" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>55. 'सूरज का सातवाँ घोड़ा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q55" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q55" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q55" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q55" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>56. 'रश्मिरथी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q56" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q56" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q56" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q56" value="घ"> (घ) काव्य</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>57. 'निंदारस' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q57" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q57" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q57" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q57" value="घ"> (घ) व्यंग्य निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>58. 'वैष्णव की फिसलन' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q58" value="क"> (क) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q58" value="ख"> (ख) हरिशंकर परसाई</label>
+                    <label><input type="radio" name="q58" value="ग"> (ग) शरद जोशी</label>
+                    <label><input type="radio" name="q58" value="घ"> (घ) केपी सक्सेना</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>59. 'भेड़ें और भेड़िये' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q59" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q59" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q59" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q59" value="घ"> (घ) व्यंग्य कथा/निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>60. 'परती परिकथा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q60" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q60" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q60" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q60" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>61. 'एक और द्रोणाचार्य' नाटक के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q61" value="क"> (क) मोहन राकेश</label>
+                    <label><input type="radio" name="q61" value="ख"> (ख) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q61" value="ग"> (ग) शंकर शेष</label>
+                    <label><input type="radio" name="q61" value="घ"> (घ) सुरेंद्र वर्मा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>62. 'राग दरबारी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q62" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q62" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q62" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q62" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>63. 'तमस' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q63" value="क"> (क) मोहन राकेश</label>
+                    <label><input type="radio" name="q63" value="ख"> (ख) राजेंद्र यादव</label>
+                    <label><input type="radio" name="q63" value="ग"> (ग) कमलेश्वर</label>
+                    <label><input type="radio" name="q63" value="घ"> (घ) भीष्म साहनी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>64. 'मेरी कॉलेज डायरी' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q64" value="क"> (क) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q64" value="ख"> (ख) मोहन राकेश</label>
+                    <label><input type="radio" name="q64" value="ग"> (ग) धीरेन्द्र वर्मा</label>
+                    <label><input type="radio" name="q64" value="घ"> (घ) हरिशंकर परसाई</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>65. 'पथिक' काव्य ग्रंथ के रचयिता कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q65" value="क"> (क) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q65" value="ख"> (ख) सूर्यकांत त्रिपाठी 'निराला'</label>
+                    <label><input type="radio" name="q65" value="ग"> (ग) सुमित्रानंदन पंत</label>
+                    <label><input type="radio" name="q65" value="घ"> (घ) राम नरेश त्रिपाठी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>66. 'रानी नागफनी की कहानी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q66" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q66" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q66" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q66" value="घ"> (घ) व्यंग्य उपन्यास</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>67. 'आखिरी चट्टान तक' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q67" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q67" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q67" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q67" value="घ"> (घ) यात्रा वृत्तांत</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>68. 'कलम का सिपाही' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q68" value="क"> (क) उपन्यास</label>
+                    <label><input type="radio" name="q68" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q68" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q68" value="घ"> (घ) जीवनी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>69. 'आवारा मसीहा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q69" value="क"> (क) उपन्यास</label>
+                    <label><input type="radio" name="q69" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q69" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q69" value="घ"> (घ) जीवनी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>70. 'रस मीमांसा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q70" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q70" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q70" value="ग"> (ग) आलोचना</label>
+                    <label><input type="radio" name="q70" value="घ"> (घ) नाटक</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>71. 'मेरी लद्दाख यात्रा' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q71" value="क"> (क) मोहन राकेश</label>
+                    <label><input type="radio" name="q71" value="ख"> (ख) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q71" value="ग"> (ग) राहुल सांकृत्यायन</label>
+                    <label><input type="radio" name="q71" value="घ"> (घ) अज्ञेय</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>72. 'भोलाराम का जीव' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q72" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q72" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q72" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q72" value="घ"> (घ) व्यंग्य कहानी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>73. 'प्रगति और परम्परा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q73" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q73" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q73" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q73" value="घ"> (घ) आलोचना</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>74. 'भूतनाथ' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q74" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q74" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q74" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q74" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>75. 'अनामदास का पोथा' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q75" value="क"> (क) मोहन राकेश</label>
+                    <label><input type="radio" name="q75" value="ख"> (ख) हज़ारीप्रसाद द्विवेदी</label>
+                    <label><input type="radio" name="q75" value="ग"> (ग) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q75" value="घ"> (घ) जैनेन्द्र कुमार</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>76. 'सरस्वती' पत्रिका के संपादक कौन थे?</p>
+                <div class="options">
+                    <label><input type="radio" name="q76" value="क"> (क) प्रेमचंद</label>
+                    <label><input type="radio" name="q76" value="ख"> (ख) महावीर प्रसाद द्विवेदी</label>
+                    <label><input type="radio" name="q76" value="ग"> (ग) आचार्य रामचंद्र शुक्ल</label>
+                    <label><input type="radio" name="q76" value="घ"> (घ) जयशंकर प्रसाद</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>77. 'भारत दुर्दशा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q77" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q77" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q77" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q77" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>78. 'मेरी असफलताएँ' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q78" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q78" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q78" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q78" value="घ"> (घ) आत्मकथा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>79. 'आँचल' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q79" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q79" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q79" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q79" value="घ"> (घ) पत्रिका</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>80. 'अथातो घुमक्कड़ जिज्ञासा' के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q80" value="क"> (क) अज्ञेय</label>
+                    <label><input type="radio" name="q80" value="ख"> (ख) मोहन राकेश</label>
+                    <label><input type="radio" name="q80" value="ग"> (ग) राहुल सांकृत्यायन</label>
+                    <label><input type="radio" name="q80" value="घ"> (घ) हरिशंकर परसाई</label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="ग">
+                <p>81. 'नदी के द्वीप' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q81" value="क"> (क) धर्मवीर भारती</label>
+                    <label><input type="radio" name="q81" value="ख"> (ख) जैनेन्द्र कुमार</label>
+                    <label><input type="radio" name="q81" value="ग"> (ग) अज्ञेय</label>
+                    <label><input type="radio" name="q81" value="घ"> (घ) निर्मल वर्मा</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>82. 'पद्मावत' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q82" value="क"> (क) नाटक</label>
+                    <label><input type="radio" name="q82" value="ख"> (ख) कहानी</label>
+                    <label><input type="radio" name="q82" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q82" value="घ"> (घ) काव्य</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>83. 'अरण्य' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q83" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q83" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q83" value="ग"> (ग) निबंध</label>
+                    <label><input type="radio" name="q83" value="घ"> (घ) यात्रा वृत्तांत/यात्रा डायरी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>84. 'परख' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q84" value="क"> (क) अज्ञेय</label>
+                    <label><input type="radio" name="q84" value="ख"> (ख) भगवतीचरण वर्मा</label>
+                    <label><input type="radio" name="q84" value="ग"> (ग) जैनेन्द्र कुमार</label>
+                    <label><input type="radio" name="q84" value="घ"> (घ) इलाचंद्र जोशी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>85. 'प्रसाद' के उपन्यासों में कौन सा अधूरा रह गया था?</p>
+                <div class="options">
+                    <label><input type="radio" name="q85" value="क"> (क) कंकाल</label>
+                    <label><input type="radio" name="q85" value="ख"> (ख) तितली</label>
+                    <label><input type="radio" name="q85" value="ग"> (ग) इरावती</label>
+                    <label><input type="radio" name="q85" value="घ"> (घ) ध्रुवस्वामिनी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>86. 'निराला' की किस विधा की रचना गद्य में है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q86" value="क"> (क) कविता</label>
+                    <label><input type="radio" name="q86" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q86" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q86" value="घ"> (घ) कहानी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>87. 'रामचंद्र शुक्ल' की आलोचना पद्धति क्या कहलाती है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q87" value="क"> (क) मनोवैज्ञानिक आलोचना</label>
+                    <label><input type="radio" name="q87" value="ख"> (ख) मार्क्सवादी आलोचना</label>
+                    <label><input type="radio" name="q87" value="ग"> (ग) रसवादी आलोचना</label>
+                    <label><input type="radio" name="q87" value="घ"> (घ) शैलीवैज्ञानिक आलोचना</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>88. 'हंस' पत्रिका का संपादन किसने किया था?</p>
+                <div class="options">
+                    <label><input type="radio" name="q88" value="क"> (क) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q88" value="ख"> (ख) प्रेमचंद</label>
+                    <label><input type="radio" name="q88" value="ग"> (ग) रामचंद्र शुक्ल</label>
+                    <label><input type="radio" name="q88" value="घ"> (घ) अज्ञेय</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>89. 'चंद्रगुप्त' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q89" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q89" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q89" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q89" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>90. 'अंधेर नगरी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q90" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q90" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q90" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q90" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>91. 'महादेवी वर्मा' की रचनाओं में प्रमुख भाव क्या है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q91" value="क"> (क) विद्रोह</label>
+                    <label><input type="radio" name="q91" value="ख"> (ख) हास्य</label>
+                    <label><input type="radio" name="q91" value="ग"> (ग) करुणा और वेदना</label>
+                    <label><input type="radio" name="q91" value="घ"> (घ) राष्ट्रीयता</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>92. 'सप्तक' परंपरा का प्रारंभ किसने किया?</p>
+                <div class="options">
+                    <label><input type="radio" name="q92" value="क"> (क) प्रेमचंद</label>
+                    <label><input type="radio" name="q92" value="ख"> (ख) जयशंकर प्रसाद</label>
+                    <label><input type="radio" name="q92" value="ग"> (ग) अज्ञेय</label>
+                    <label><input type="radio" name="q92" value="घ"> (घ) हज़ारीप्रसाद द्विवेदी</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>93. 'अतीत के चलचित्र' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q93" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q93" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q93" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q93" value="घ"> (घ) रेखाचित्र</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>94. 'स्मृति की रेखाएँ' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q94" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q94" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q94" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q94" value="घ"> (घ) रेखाचित्र</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>95. 'एक बूंद सहसा उछली' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q95" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q95" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q95" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q95" value="घ"> (घ) यात्रा वृत्तांत</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>96. 'भारत-भारती' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q96" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q96" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q96" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q96" value="घ"> (घ) काव्य</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>97. 'शरणार्थी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q97" value="क"> (क) उपन्यास</label>
+                    <label><input type="radio" name="q97" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q97" value="ग"> (ग) कहानी संग्रह</label>
+                    <label><input type="radio" name="q97" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ग">
+                <p>98. 'अंधेरे बंद कमरे' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q98" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q98" value="ख"> (ख) नाटक</label>
+                    <label><input type="radio" name="q98" value="ग"> (ग) उपन्यास</label>
+                    <label><input type="radio" name="q98" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="ख">
+                <p>99. 'चित्रलेखा' उपन्यास के लेखक कौन हैं?</p>
+                <div class="options">
+                    <label><input type="radio" name="q99" value="क"> (क) जैनेन्द्र कुमार</label>
+                    <label><input type="radio" name="q99" value="ख"> (ख) भगवतीचरण वर्मा</label>
+                    <label><input type="radio" name="q99" value="ग"> (ग) इलाचंद्र जोशी</label>
+                    <label><input type="radio" name="q99" value="घ"> (घ) मोहन राकेश</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>100. 'आँखों देखी' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q100" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q100" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q100" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q100" value="घ"> (घ) आत्मकथा/संस्मरण</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>101. 'मल्लिकार्जुन' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q101" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q101" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q101" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q101" value="घ"> (घ) काव्य</label>
+                </div>
+            </div>
+
+            <div class="question-block" data-correct="घ">
+                <p>102. 'चिड़िया रैन बसेरा' किस विधा की रचना है?</p>
+                <div class="options">
+                    <label><input type="radio" name="q102" value="क"> (क) कहानी</label>
+                    <label><input type="radio" name="q102" value="ख"> (ख) उपन्यास</label>
+                    <label><input type="radio" name="q102" value="ग"> (ग) नाटक</label>
+                    <label><input type="radio" name="q102" value="घ"> (घ) निबंध</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">परिणाम देखें</button>
+        </form>
+
+        <div class="results" id="quizResults">
+            <p>आपका स्कोर: <span id="score">0</span> / <span id="totalQuestions">0</span></p>
+            <h3>प्रत्येक प्रश्न का परिणाम:</h3>
+            <div id="individualResults"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 हिन्दी साहित्य टेस्ट सीरीज़</p>
+    </footer>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const questionBlocks = document.querySelectorAll('.question-block');
+            let score = 0;
+            const totalQuestions = questionBlocks.length;
+            const individualResultsDiv = document.getElementById('individualResults');
+            individualResultsDiv.innerHTML = ''; // Clear previous results
+
+            questionBlocks.forEach((block, index) => {
+                const questionNumber = index + 1;
+                const correctOptionValue = block.dataset.correct;
+                const selectedOption = block.querySelector(`input[name="q${questionNumber}"]:checked`);
+                
+                const resultItem = document.createElement('div');
+                resultItem.classList.add('result-item');
+
+                let isCorrect = false;
+                let userAnswer = 'कोई जवाब नहीं';
+                
+                if (selectedOption) {
+                    userAnswer = selectedOption.value;
+                    if (selectedOption.value === correctOptionValue) {
+                        score++;
+                        isCorrect = true;
+                    }
+                }
+
+                const questionText = block.querySelector('p').textContent;
+                const correctText = block.querySelector(`.options label input[value="${correctOptionValue}"]`).parentNode.textContent.trim();
+
+                resultItem.innerHTML = `<p>${questionText}</p>`;
+                if (isCorrect) {
+                    resultItem.classList.add('correct');
+                    resultItem.innerHTML += `<p>आपका उत्तर: ${selectedOption.parentNode.textContent.trim()} <span style="color: green;">(सही)</span></p>`;
+                } else {
+                    resultItem.classList.add('incorrect');
+                    resultItem.innerHTML += `<p>आपका उत्तर: ${userAnswer === 'कोई जवाब नहीं' ? userAnswer : selectedOption.parentNode.textContent.trim()} <span style="color: red;">(गलत)</span></p>`;
+                    resultItem.innerHTML += `<span class="correct-answer">सही उत्तर: ${correctText}</span>`;
+                }
+                individualResultsDiv.appendChild(resultItem);
+            });
+
+            document.getElementById('score').textContent = score;
+            document.getElementById('totalQuestions').textContent = totalQuestions;
+            document.getElementById('quizResults').style.display = 'block'; // Show results
+            document.getElementById('quizResults').scrollIntoView({ behavior: 'smooth' }); // Scroll to results
+        });
+    </script>
+</body>
+</html>
